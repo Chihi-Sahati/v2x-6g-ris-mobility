@@ -1,0 +1,145 @@
+{
+  "manuscript_version": "2.0",
+  "repository_version": "2.0",
+  "sync_date": "2026-03-24",
+  "target_journal": "IEEE Transactions on Vehicular Technology",
+  "submission_status": "preparation",
+  "doi": null,
+  
+  "title": "AI Agent-Based Mobility Management with Reconfigurable Intelligent Surfaces for 6G V2X Networks",
+  
+  "authors": [
+    {
+      "name": "AlHussein A. Al-Sahati",
+      "affiliation": "Military Academy for Security and Strategic Sciences, Benghazi, Libya",
+      "email": "hussein.alagore@gmail.com",
+      "ieee_grade": "Member, IEEE"
+    },
+    {
+      "name": "Houda Chihi",
+      "affiliation": "Higher School of Communication of Tunis (Sup'Com), University of Carthage, Ariana, Tunisia",
+      "email": "houda.chihi@supcom.tn",
+      "ieee_grade": "Senior Member, IEEE"
+    }
+  ],
+  
+  "document_stats": {
+    "pages": 22,
+    "equations": 28,
+    "figures": 10,
+    "tables": 2,
+    "references": 15
+  },
+  
+  "figures": [
+    {"number": 1, "title": "Network Topology", "file": "fig1_network_topology.png", "manuscript_ref": "Section III-A"},
+    {"number": 2, "title": "RIS Architecture", "file": "fig2_ris_architecture.png", "manuscript_ref": "Section III-C"},
+    {"number": 3, "title": "Agent Loop Pattern", "file": "fig3_agent_loop.png", "manuscript_ref": "Section IV-A"},
+    {"number": 4, "title": "QMIX Architecture", "file": "fig4_qmix_architecture.png", "manuscript_ref": "Section V-A"},
+    {"number": 5, "title": "MAPPO Architecture", "file": "fig5_mappo_architecture.png", "manuscript_ref": "Section V-B"},
+    {"number": 6, "title": "SINR vs Vehicle Speed", "file": "fig6_sinr_vs_speed.png", "manuscript_ref": "Section VI-B"},
+    {"number": 7, "title": "HSR vs Vehicle Speed", "file": "fig7_hsr_vs_speed.png", "manuscript_ref": "Section VI-C"},
+    {"number": 8, "title": "Latency CDF", "file": "fig8_latency_cdf.png", "manuscript_ref": "Section VI-D"},
+    {"number": 9, "title": "Throughput Comparison", "file": "fig9_throughput_comparison.png", "manuscript_ref": "Section VI-E"},
+    {"number": 10, "title": "Convergence Curves", "file": "fig10_convergence.png", "manuscript_ref": "Section VI-F"}
+  ],
+  
+  "equations": [
+    {"number": 1, "section": "III-B", "description": "Received signal model", "code_ref": "channel.py"},
+    {"number": 2, "section": "III-B", "description": "LOS path loss", "code_ref": "channel.py:compute_path_loss_los"},
+    {"number": 3, "section": "III-B", "description": "NLOS path loss", "code_ref": "channel.py:compute_path_loss_nlos"},
+    {"number": 4, "section": "III-B", "description": "LOS probability", "code_ref": "channel.py:compute_los_probability"},
+    {"number": 5, "section": "III-C", "description": "RIS channel gain", "code_ref": "channel.py:compute_ris_channel"},
+    {"number": 6, "section": "III-C", "description": "Optimal phase shift", "code_ref": "agent_loop.py:RISOptimizationAgent"},
+    {"number": 7, "section": "III-C", "description": "RIS signal power", "code_ref": "channel.py"},
+    {"number": 8, "section": "III-C", "description": "Phase quantization", "code_ref": "config.py:phase_quantization_bits"},
+    {"number": 9, "section": "III-D", "description": "SINR formula", "code_ref": "channel.py:compute_sinr"},
+    {"number": 10, "section": "III-D", "description": "Shannon capacity", "code_ref": "channel.py"},
+    {"number": 11, "section": "III-E", "description": "Gauss-Markov mobility", "code_ref": "mobility.py:GaussMarkovMobility"},
+    {"number": 12, "section": "III-F", "description": "CMDP objective", "code_ref": "v2x_environment.py"},
+    {"number": 13, "section": "III-F", "description": "URLLC latency constraint", "code_ref": "config.py:max_latency_ms"},
+    {"number": 14, "section": "III-F", "description": "HSR constraint", "code_ref": "config.py:min_hsr"},
+    {"number": 15, "section": "IV-B", "description": "RIS optimization objective", "code_ref": "agent_loop.py"},
+    {"number": 16, "section": "IV-B", "description": "Handover condition", "code_ref": "agent_loop.py:HandoverManagementAgent"},
+    {"number": 17, "section": "IV-B", "description": "Resource allocation", "code_ref": "agent_loop.py:ResourceAllocationAgent"},
+    {"number": 18, "section": "IV-C", "description": "Joint action selection", "code_ref": "agent_loop.py:AgentCoordinator"},
+    {"number": 19, "section": "V-A", "description": "QMIX value decomposition", "code_ref": "qmix.py:MixingNetwork"},
+    {"number": 20, "section": "V-A", "description": "Monotonicity constraint", "code_ref": "qmix.py"},
+    {"number": 21, "section": "V-A", "description": "QMIX loss function", "code_ref": "qmix.py:QMIXTrainer"},
+    {"number": 22, "section": "V-B", "description": "PPO clip objective", "code_ref": "mappo.py:MAPPOTrainer"},
+    {"number": 23, "section": "V-B", "description": "Value function loss", "code_ref": "mappo.py:MAPPOTrainer"},
+    {"number": 24, "section": "V-B", "description": "Combined objective", "code_ref": "mappo.py:MAPPOTrainer"},
+    {"number": 25, "section": "V-C", "description": "Lyapunov function", "code_ref": "convergence analysis"},
+    {"number": 26, "section": "V-C", "description": "QMIX convergence rate", "code_ref": "convergence analysis"},
+    {"number": 27, "section": "V-C", "description": "MAPPO sample complexity", "code_ref": "convergence analysis"},
+    {"number": 28, "section": "V-C", "description": "Lyapunov stability", "code_ref": "convergence analysis"}
+  ],
+  
+  "components": {
+    "abstract": {
+      "manuscript_section": "Abstract",
+      "repo_location": "README.md",
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    },
+    "equations": {
+      "manuscript_section": "Sections III, V",
+      "repo_location": "code/**/*.py",
+      "equation_count": 28,
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    },
+    "parameters": {
+      "manuscript_section": "Table I",
+      "repo_location": "code/utils/config.py",
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    },
+    "results": {
+      "manuscript_section": "Table II",
+      "repo_location": "simulations/results/*.csv",
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    },
+    "authors": {
+      "manuscript_section": "Title Page",
+      "repo_location": "README.md, CITATION.cff",
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    },
+    "references": {
+      "manuscript_section": "References",
+      "repo_location": "CITATION.cff",
+      "reference_count": 15,
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    },
+    "figures": {
+      "manuscript_section": "Throughout",
+      "repo_location": "docs/figures/*.png",
+      "figure_count": 10,
+      "sync_status": "verified",
+      "verified_date": "2026-03-24"
+    }
+  },
+  
+  "compatibility_checks": [
+    {"check": "Abstract match between README.md and manuscript", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Equation 2 (path loss) matches config.py parameters", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Equation 8 (phase quantization) matches 4-bit config", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Equation 11 (mobility) matches mobility.py alpha=0.8", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Table I parameters match config.py values", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Table II results match CSV files", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Author names match in all locations", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "Version number consistent (v2.0)", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "All 10 figures exist in docs/figures/", "status": "pass", "verified_date": "2026-03-24"},
+    {"check": "NetOps-Guardian-AI reference correct", "status": "pass", "verified_date": "2026-03-24"}
+  ],
+  
+  "performance_results": {
+    "handover_success_rate": {"value": 98.5, "unit": "%", "constraint": "≥95%"},
+    "sinr_improvement": {"value": 8.2, "unit": "dB", "constraint": "positive"},
+    "latency": {"value": 0.85, "unit": "ms", "constraint": "<1ms"},
+    "throughput_gain": {"value": 15.3, "unit": "%", "constraint": "positive"}
+  }
+}
