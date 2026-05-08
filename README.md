@@ -1,4 +1,4 @@
-# AI Agent-Based Mobility Management with Reconfigurable Intelligent Surfaces for 6G V2X Networks
+# Multi-Agent Reinforcement Learning for RIS-Assisted V2X Mobility Management in 6G Networks
 
 [![IEEE TVT](https://img.shields.io/badge/IEEE%20Transactions%20on%20Vehicular%20Technology-Submitted-blue)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,9 +18,7 @@
 
 ## Abstract
 
-The convergence of sixth-generation (6G) wireless networks, vehicle-to-everything (V2X) communications, and Reconfigurable Intelligent Surfaces (RIS) presents unprecedented opportunities for revolutionizing mobility management in high-speed vehicular scenarios. This paper proposes a novel decentralized AI Agent framework that synergistically integrates Multi-Agent Reinforcement Learning (MARL) with the Agent Loop Pattern from NetOps-Guardian-AI for dynamic optimization of RIS phase shifts and handover protocols in ultra-reliable low-latency communication (URLLC) scenarios. Our framework comprises three specialized agents implementing the iterative decision cycle: a RIS Optimization Agent that dynamically adjusts phase shifts for coverage enhancement, a Handover Management Agent that makes proactive handover decisions based on trajectory prediction, and a Resource Allocation Agent that optimizes spectrum and power allocation.
-
-We formulate the joint optimization problem as a constrained Markov Decision Process (CMDP) and employ QMIX and Multi-Agent Proximal Policy Optimization (MAPPO) algorithms with centralized training and decentralized execution. Extensive simulations under realistic 6G mmWave channel conditions demonstrate that our proposed framework achieves a 98.5% handover success rate at vehicle speeds up to 500 km/h, while maintaining URLLC latency requirements below 1 ms with 99.999% reliability. The RIS-assisted scheme provides an average SINR improvement of 8.2 dB compared to non-RIS baselines, and the Agent Loop-enhanced multi-agent approach outperforms single-agent and traditional methods by 15.3% and 41.3%, respectively, in terms of overall network throughput. Comprehensive convergence analysis using Lyapunov stability theory validates the theoretical guarantees of the proposed algorithms.
+The emergence of sixth-generation (6G) wireless networks promises transformative capabilities for vehicle-to-everything (V2X) communications, demanding ultra-reliable low-latency communication (URLLC) and seamless connectivity under high-mobility conditions. Reconfigurable intelligent surfaces (RIS) have emerged as a paradigm-shifting technology that can dynamically reshape the wireless propagation environment to enhance signal quality, particularly in non-line-of-sight (NLOS) scenarios. However, the joint optimization of RIS phase shifts, mobility management, and radio resource allocation in high-speed vehicular environments remains a formidable challenge, further complicated by imperfect channel state information (CSI) in practice. In this paper, we propose a novel multi-agent reinforcement learning (MARL) framework that integrates the Agent Loop Pattern to address RIS-assisted V2X mobility management in 6G networks. Our approach employs a hierarchical agent architecture comprising three specialized agents: RIS Optimization Agent for robust phase shift design under imperfect CSI, Handover Management Agent for proactive handover with trajectory prediction, and Resource Allocation Agent for proportional fair scheduling. We formulate the problem as a Constrained Markov Decision Process (CMDP) and solve it using two value decomposition algorithms, QMIX and Multi-Agent Proximal Policy Optimization (MAPPO). Rigorous convergence analysis is provided, establishing monotonicity-preserving convergence for QMIX and O(1/ε³) convergence rate for MAPPO. Extensive simulations demonstrate that the proposed framework achieves a 6.8 dB SINR improvement, 98.2% handover success rate at 140 km/h, and sub-millisecond URLLC latency, URLLC latency below 1 ms, and 42% throughput gain compared to baseline schemes, while maintaining robust performance under CSI errors up to σ² = 0.01.
 
 ---
 
@@ -86,8 +84,8 @@ We formulate the joint optimization problem as a constrained Markov Decision Pro
 
 | Method | HSR (%) | SINR (dB) | Latency (ms) | Throughput |
 |--------|---------|-----------|--------------|------------|
-| **Agent Loop + MARL** | **98.5** | **+8.2** | **0.85** | **+15.3%** |
-| MARL Only | 95.2 | +7.8 | 0.92 | Baseline |
+| **Agent Loop + MARL** | **98.2** | **+6.8** | **0.82** | **+42.0%** |
+| MARL Only | 95.2 | +6.2 | 0.92 | Baseline |
 | Conventional HO | 87.3 | N/A | 1.45 | -23.7% |
 | Static RIS | 91.8 | +5.1 | 1.12 | -12.4% |
 | Single-Agent RL | 89.6 | +4.3 | 1.28 | -18.5% |
