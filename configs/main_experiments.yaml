@@ -1,0 +1,99 @@
+# V2X 6G RIS Mobility Management - Main Experiment Configuration
+# Manuscript Version: v2.0
+# Matches Table I in manuscript
+
+# Network Configuration
+network:
+  carrier_freq_ghz: 28.0
+  bandwidth_mhz: 400.0
+  num_gnbs: 5
+  inter_site_distance_m: 500.0
+  tx_power_dbm: 43.0
+  num_antennas: 64
+  antenna_gain_db: 8.0
+
+# RIS Configuration  
+ris:
+  num_panels: 3
+  num_elements: 64
+  grid_rows: 8
+  grid_cols: 8
+  phase_quantization_bits: 4
+  element_spacing_wavelength: 0.5
+
+# Mobility Configuration
+mobility:
+  min_speed_kmh: 80.0
+  max_speed_kmh: 500.0
+  mean_speed_kmh: 120.0
+  arrival_rate_per_lane: 0.5
+  num_lanes: 4
+  highway_length_km: 2.5
+  gauss_markov_alpha: 0.8
+  velocity_std_kmh: 10.0
+
+# Channel Model (3GPP TR 38.901)
+channel:
+  model: "3GPP_TR_38_901_UMa"
+  los_path_loss:
+    a: 28.0
+    b: 22.0
+    c: 20.0
+  nlos_path_loss:
+    a: 13.54
+    b: 39.08
+    c: 20.0
+    d: -0.6
+  shadow_fading_std_los_db: 4.0
+  shadow_fading_std_nlos_db: 6.0
+  noise_figure_db: 7.0
+
+# URLLC Constraints
+urllc:
+  max_latency_ms: 1.0
+  reliability_target: 1e-5  # 99.999%
+  min_handover_success_rate: 0.95
+
+# Reinforcement Learning
+rl:
+  algorithm: "QMIX"  # or "MAPPO"
+  discount_factor: 0.99
+  learning_rate: 5.0e-4
+  batch_size: 32
+  num_episodes: 10000
+  eval_frequency: 100
+  
+  # QMIX specific
+  qmix:
+    mixing_embed_dim: 32
+    hypernet_embed_dim: 64
+    target_update_freq: 200
+    
+  # MAPPO specific
+  mappo:
+    ppo_clip: 0.2
+    gae_lambda: 0.95
+    entropy_coef: 0.01
+    value_loss_coef: 0.5
+
+# Agent Loop Configuration (from NetOps-Guardian-AI)
+agent_loop:
+  max_retries: 3
+  task_queue_size: 100
+  message_buffer_size: 1000
+  broadcast_enabled: true
+
+# Simulation
+simulation:
+  episode_length: 1000
+  time_step_ms: 10
+  num_seeds: 5
+  warmup_steps: 100
+
+# Logging
+logging:
+  log_dir: "./logs"
+  checkpoint_dir: "./checkpoints"
+  results_dir: "./simulations/results"
+  log_frequency: 100
+  save_checkpoints: true

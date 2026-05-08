@@ -1,0 +1,8 @@
+variant,avg_sinr_db,avg_throughput_mbps,handover_success_rate_pct,avg_latency_ms,spectral_efficiency_bps_hz,reference_speed_kmh,num_episodes
+Full Model (Agent Loop + MARL),21.6,2288.4,97.62,2.71,8.6,70,500
+w/o RIS Optimization,16.58,1504.1,92.28,5.34,5.94,70,500
+w/o Agent Loop,19.69,1848.2,94.05,4.14,7.1,70,500
+w/o Handover Agent,18.3,1788.4,82.32,5.71,6.9,70,500
+w/o Resource Agent,20.2,1681.9,94.54,3.79,7.76,70,500
+w/o CTDE (Centralized Only),18.29,1618.2,90.35,4.74,6.1,70,500
+w/o GAE,20.02,1966.2,94.94,3.94,7.58,70,500

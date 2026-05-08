@@ -1,0 +1,31 @@
+method,speed_kmh,sinr_db,num_samples
+Agent Loop + MARL,30,24.1,1000
+Agent Loop + MARL,50,23.73,1000
+Agent Loop + MARL,70,22.93,1000
+Agent Loop + MARL,90,20.62,1000
+Agent Loop + MARL,110,18.82,1000
+Agent Loop + MARL,120,18.29,1000
+MARL Only,30,22.42,1000
+MARL Only,50,21.87,1000
+MARL Only,70,19.34,1000
+MARL Only,90,18.08,1000
+MARL Only,110,15.74,1000
+MARL Only,120,14.47,1000
+Single-Agent RL,30,19.26,1000
+Single-Agent RL,50,18.0,1000
+Single-Agent RL,70,16.83,1000
+Single-Agent RL,90,14.4,1000
+Single-Agent RL,110,13.2,1000
+Single-Agent RL,120,12.02,1000
+Static RIS,30,17.89,1000
+Static RIS,50,15.95,1000
+Static RIS,70,13.75,1000
+Static RIS,90,12.02,1000
+Static RIS,110,10.25,1000
+Static RIS,120,8.77,1000
+Conventional HO,30,14.21,1000
+Conventional HO,50,13.82,1000
+Conventional HO,70,11.16,1000
+Conventional HO,90,9.5,1000
+Conventional HO,110,7.69,1000
+Conventional HO,120,6.66,1000

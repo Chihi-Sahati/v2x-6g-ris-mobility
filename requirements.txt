@@ -1,0 +1,38 @@
+# V2X 6G RIS Mobility Management - Dependencies
+# Manuscript Version: v2.0
+# Last Updated: 2026-03-24
+
+# Core Dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+torch>=2.0.0
+torchaudio>=2.0.0
+torchvision>=0.15.0
+
+# Reinforcement Learning
+gymnasium>=0.29.0
+stable-baselines3>=2.0.0
+tianshou>=0.5.1
+
+# Data Processing
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.65.0
+omegaconf>=2.3.0
+
+# Testing
+pytest>=7.3.0
+pytest-cov>=4.0.0
+
+# Code Quality
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0
+
+# Optional: GPU Support
+# Install PyTorch with CUDA support:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118

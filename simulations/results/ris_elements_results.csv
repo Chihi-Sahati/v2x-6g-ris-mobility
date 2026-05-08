@@ -1,0 +1,31 @@
+method,ris_elements_per_panel,total_ris_elements,num_panels,panel_size_cm,sinr_gain_over_no_ris_db,throughput_improvement_pct,wavelength_mm
+Agent Loop + MARL,16,48,3,8.6,4.18,10.6,10.71
+Agent Loop + MARL,32,96,3,17.1,6.62,32.8,10.71
+Agent Loop + MARL,64,192,3,34.3,10.52,56.5,10.71
+Agent Loop + MARL,128,384,3,68.6,13.87,74.6,10.71
+Agent Loop + MARL,256,768,3,137.1,17.81,99.2,10.71
+Agent Loop + MARL,512,1536,3,274.3,20.16,112.5,10.71
+MARL Only,16,48,3,8.6,2.48,13.6,10.71
+MARL Only,32,96,3,17.1,4.37,25.6,10.71
+MARL Only,64,192,3,34.3,8.47,43.2,10.71
+MARL Only,128,384,3,68.6,11.22,58.5,10.71
+MARL Only,256,768,3,137.1,13.6,74.6,10.71
+MARL Only,512,1536,3,274.3,15.67,90.9,10.71
+Single-Agent RL,16,48,3,8.6,1.99,7.4,10.71
+Single-Agent RL,32,96,3,17.1,5.2,18.9,10.71
+Single-Agent RL,64,192,3,34.3,6.22,33.1,10.71
+Single-Agent RL,128,384,3,68.6,8.62,48.3,10.71
+Single-Agent RL,256,768,3,137.1,10.29,58.1,10.71
+Single-Agent RL,512,1536,3,274.3,13.02,69.7,10.71
+Static RIS,16,48,3,8.6,1.29,7.1,10.71
+Static RIS,32,96,3,17.1,3.36,15.8,10.71
+Static RIS,64,192,3,34.3,5.13,24.1,10.71
+Static RIS,128,384,3,68.6,7.08,37.9,10.71
+Static RIS,256,768,3,137.1,9.0,47.2,10.71
+Static RIS,512,1536,3,274.3,9.62,51.8,10.71
+Conventional HO,16,48,3,8.6,0.31,0.5,10.71
+Conventional HO,32,96,3,17.1,0.4,0.7,10.71
+Conventional HO,64,192,3,34.3,0,0.8,10.71
+Conventional HO,128,384,3,68.6,0.2,0,10.71
+Conventional HO,256,768,3,137.1,0,0,10.71
+Conventional HO,512,1536,3,274.3,0.57,0,10.71

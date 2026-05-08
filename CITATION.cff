@@ -1,0 +1,138 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "AI Agent-Based Mobility Management with Reconfigurable Intelligent Surfaces for 6G V2X Networks"
+version: 2.0
+date-released: 2026-03-24
+url: "https://github.com/Chihi-Sahati/V2X-RIS-Mobility-6G"
+
+authors:
+  - family-names: Al-Sahati
+    given-names: AlHussein A.
+    affiliation: Military Academy for Security and Strategic Sciences, Benghazi, Libya
+    email: hussein.alagore@gmail.com
+    orcid: 
+    
+  - family-names: Chihi
+    given-names: Houda
+    affiliation: Higher School of Communication of Tunis (Sup'Com), University of Carthage, Ariana, Tunisia
+    email: houda.chihi@supcom.tn
+    orcid: 
+
+abstract: >
+  The convergence of sixth-generation (6G) wireless networks, vehicle-to-everything (V2X) 
+  communications, and Reconfigurable Intelligent Surfaces (RIS) presents unprecedented 
+  opportunities for revolutionizing mobility management in high-speed vehicular scenarios. 
+  This paper proposes a novel decentralized AI Agent framework that synergistically 
+  integrates Multi-Agent Reinforcement Learning (MARL) with the Agent Loop Pattern from 
+  NetOps-Guardian-AI for dynamic optimization of RIS phase shifts and handover protocols 
+  in ultra-reliable low-latency communication (URLLC) scenarios. Our framework comprises 
+  three specialized agents implementing the iterative decision cycle: a RIS Optimization 
+  Agent that dynamically adjusts phase shifts for coverage enhancement, a Handover 
+  Management Agent that makes proactive handover decisions based on trajectory prediction, 
+  and a Resource Allocation Agent that optimizes spectrum and power allocation. We formulate 
+  the joint optimization problem as a constrained Markov Decision Process (CMDP) and employ 
+  QMIX and Multi-Agent Proximal Policy Optimization (MAPPO) algorithms with centralized 
+  training and decentralized execution. Extensive simulations under realistic 6G mmWave 
+  channel conditions demonstrate that our proposed framework achieves a 98.5% handover 
+  success rate at vehicle speeds up to 500 km/h, while maintaining URLLC latency requirements 
+  below 1 ms with 99.999% reliability. The RIS-assisted scheme provides an average SINR 
+  improvement of 8.2 dB compared to non-RIS baselines, and the Agent Loop-enhanced 
+  multi-agent approach outperforms single-agent and traditional methods by 15.3% and 41.3%, 
+  respectively, in terms of overall network throughput.
+
+keywords:
+  - 6G Networks
+  - Reconfigurable Intelligent Surfaces
+  - Vehicle-to-Everything
+  - Multi-Agent Reinforcement Learning
+  - Agent Loop Pattern
+  - Mobility Management
+  - URLLC
+  - Handover Optimization
+
+license: MIT
+license-url: https://opensource.org/licenses/MIT
+
+repository-code: "https://github.com/Chihi-Sahati/V2X-RIS-Mobility-6G"
+repository-artifact: "https://github.com/Chihi-Sahati/V2X-RIS-Mobility-6G"
+
+type: software
+
+identifiers:
+  - type: doi
+    value: ""  # To be added after IEEE publication
+    description: "IEEE Transactions on Vehicular Technology DOI"
+
+references:
+  - type: article
+    authors:
+      - family-names: Wu
+        given-names: Qingqing
+      - family-names: Zhang
+        given-names: Rui
+    title: "Intelligent reflecting surface enhanced wireless network via joint active and passive beamforming"
+    journal: IEEE Transactions on Wireless Communications
+    year: 2019
+    volume: 18
+    issue: 11
+    pages: 5394-5409
+    
+  - type: article
+    authors:
+      - family-names: Di Renzo
+        given-names: Marco
+        suffix: et al.
+    title: "Smart radio environments empowered by reconfigurable intelligent surfaces"
+    journal: IEEE Journal on Selected Areas in Communications
+    year: 2020
+    volume: 38
+    issue: 11
+    pages: 2450-2525
+    
+  - type: conference
+    authors:
+      - family-names: Rashid
+        given-names: Tabish
+        suffix: et al.
+    title: "QMIX: Monotonic value function factorisation for deep multi-agent reinforcement learning"
+    collection-title: Proceedings of ICML
+    year: 2018
+    pages: 4295-4304
+    
+  - type: conference
+    authors:
+      - family-names: Yu
+        given-names: Chao
+        suffix: et al.
+    title: "The surprising effectiveness of PPO in cooperative multi-agent games"
+    collection-title: Proceedings of NeurIPS
+    year: 2022
+    
+  - type: software
+    authors:
+      - family-names: Al-Sahati
+        given-names: AlHussein A.
+      - family-names: Chihi
+        given-names: Houda
+    title: "NetOps-Guardian-AI: A unified autonomous network operations platform with NOC/SOC convergence"
+    year: 2026
+    url: "https://github.com/Chihi-Sahati/NetOps-Guardian-AI-"
+    
+  - type: report
+    authors:
+      - name: "3GPP"
+    title: "Study on channel model for frequencies from 0.5 to 100 GHz"
+    year: 2020
+    number: "3GPP TR 38.901 V16.1.0"
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Al-Sahati
+      given-names: AlHussein A.
+    - family-names: Chihi
+      given-names: Houda
+  title: "AI Agent-Based Mobility Management with Reconfigurable Intelligent Surfaces for 6G V2X Networks"
+  journal: IEEE Transactions on Vehicular Technology
+  year: 2026
+  note: "Submitted"

@@ -1,0 +1,31 @@
+method,speed_kmh,total_throughput_mbps,per_vehicle_throughput_mbps,num_vehicles,bandwidth_mhz
+Agent Loop + MARL,30,2633.1,87.77,30,400
+Agent Loop + MARL,50,2458.8,81.96,30,400
+Agent Loop + MARL,70,2240.7,74.69,30,400
+Agent Loop + MARL,90,2052.5,68.42,30,400
+Agent Loop + MARL,110,1831.7,61.06,30,400
+Agent Loop + MARL,120,1781.1,59.37,30,400
+MARL Only,30,2336.8,77.89,30,400
+MARL Only,50,2253.8,75.13,30,400
+MARL Only,70,1797.8,59.93,30,400
+MARL Only,90,1609.1,53.64,30,400
+MARL Only,110,1349.1,44.97,30,400
+MARL Only,120,1214.4,40.48,30,400
+Single-Agent RL,30,2045.4,68.18,30,400
+Single-Agent RL,50,1617.7,53.92,30,400
+Single-Agent RL,70,1400.0,46.67,30,400
+Single-Agent RL,90,1257.6,41.92,30,400
+Single-Agent RL,110,867.5,28.92,30,400
+Single-Agent RL,120,769.8,25.66,30,400
+Static RIS,30,1650.2,55.01,30,400
+Static RIS,50,1341.4,44.71,30,400
+Static RIS,70,1132.1,37.74,30,400
+Static RIS,90,775.5,25.85,30,400
+Static RIS,110,565.6,18.85,30,400
+Static RIS,120,458.2,15.27,30,400
+Conventional HO,30,1186.5,39.55,30,400
+Conventional HO,50,1019.9,34.0,30,400
+Conventional HO,70,740.4,24.68,30,400
+Conventional HO,90,516.0,17.2,30,400
+Conventional HO,110,336.9,11.23,30,400
+Conventional HO,120,240.3,8.01,30,400

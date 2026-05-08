@@ -1,0 +1,41 @@
+method,phase_noise_std_deg,beamforming_gain_pct,sinr_impact_db,throughput_ratio,ris_elements,carrier_freq_ghz
+Agent Loop + MARL,0,99.74,-0.01,0.9974,64,28
+Agent Loop + MARL,2,98.1,-0.08,0.981,64,28
+Agent Loop + MARL,5,96.51,-0.15,0.9651,64,28
+Agent Loop + MARL,10,89.69,-0.47,0.8969,64,28
+Agent Loop + MARL,15,78.41,-1.06,0.7841,64,28
+Agent Loop + MARL,20,69.98,-1.55,0.6998,64,28
+Agent Loop + MARL,30,52.52,-2.8,0.5252,64,28
+Agent Loop + MARL,45,34.36,-4.64,0.3436,64,28
+MARL Only,0,100.0,0.0,1.0,64,28
+MARL Only,2,96.04,-0.18,0.9604,64,28
+MARL Only,5,94.97,-0.22,0.9497,64,28
+MARL Only,10,81.09,-0.91,0.8109,64,28
+MARL Only,15,69.44,-1.58,0.6944,64,28
+MARL Only,20,61.48,-2.11,0.6148,64,28
+MARL Only,30,41.9,-3.78,0.419,64,28
+MARL Only,45,26.7,-5.73,0.267,64,28
+Single-Agent RL,0,99.37,-0.03,0.9937,64,28
+Single-Agent RL,2,99.25,-0.03,0.9925,64,28
+Single-Agent RL,5,88.72,-0.52,0.8872,64,28
+Single-Agent RL,10,78.47,-1.05,0.7847,64,28
+Single-Agent RL,15,66.49,-1.77,0.6649,64,28
+Single-Agent RL,20,54.43,-2.64,0.5443,64,28
+Single-Agent RL,30,34.66,-4.6,0.3466,64,28
+Single-Agent RL,45,18.15,-7.41,0.1815,64,28
+Static RIS,0,100.0,0.0,1.0,64,28
+Static RIS,2,95.07,-0.22,0.9507,64,28
+Static RIS,5,84.75,-0.72,0.8475,64,28
+Static RIS,10,72.61,-1.39,0.7261,64,28
+Static RIS,15,58.05,-2.36,0.5805,64,28
+Static RIS,20,43.55,-3.61,0.4355,64,28
+Static RIS,30,26.07,-5.84,0.2607,64,28
+Static RIS,45,10.32,-9.86,0.1032,64,28
+Conventional HO,0,97.56,-0.11,0.9756,64,28
+Conventional HO,2,93.68,-0.28,0.9368,64,28
+Conventional HO,5,82.16,-0.85,0.8216,64,28
+Conventional HO,10,70.47,-1.52,0.7047,64,28
+Conventional HO,15,51.55,-2.88,0.5155,64,28
+Conventional HO,20,39.15,-4.07,0.3915,64,28
+Conventional HO,30,19.59,-7.08,0.1959,64,28
+Conventional HO,45,9.92,-10.03,0.0992,64,28
